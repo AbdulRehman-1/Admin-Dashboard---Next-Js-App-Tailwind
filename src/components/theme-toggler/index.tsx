@@ -3,23 +3,16 @@ import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
 
 const ThemeToggle = () => {
-  const [mounted, setMounted] = useState<boolean>(false);
-  const { theme, setTheme } = useTheme();
-
   const handleTheme = () => {
     document.documentElement.classList.add('dark');
-    // else if (theme == 'dark') document.documentElement.classList.add('light');
+    document.querySelector('html')?.setAttribute('data-theme', 'dark');
   };
   const handleLight = () => {
     document.documentElement.classList.remove('dark');
+    document.querySelector('html')?.setAttribute('data-theme', '');
   };
 
-  return (
-    <div>
-      <button onClick={handleTheme}>Dark</button>
-      <button onClick={handleLight}>Light</button>
-    </div>
-  );
+  return <div className='border border-gray'></div>;
 };
 
 export default ThemeToggle;

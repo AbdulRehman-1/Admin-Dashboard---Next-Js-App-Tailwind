@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --primary: 114, 35, 204;
+@layer base {
+  html {
+    --color-primary: #ffffff;
+    --color-secondary: #34a853;
+    --color-buttons: #fbbc05;
+    --color-typography: #000000;
+  }
+  @import '../styles/themes/dark.css';
 }

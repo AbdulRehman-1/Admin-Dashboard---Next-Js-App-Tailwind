@@ -3,9 +3,5 @@
 import { ThemeToggle } from '@/components';
 
 export default function Home() {
-  return (
-    <div>
-      <ThemeToggle />
-    </div>
-  );
+  return <div>Home Page</div>;
 }
