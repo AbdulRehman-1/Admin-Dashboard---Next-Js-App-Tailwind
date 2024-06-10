@@ -8,6 +8,7 @@
     --color-secondary: #34a853;
     --color-buttons: #fbbc05;
     --color-typography: #000000;
+    --color-borderColor: #000000;
   }
   @import '../styles/themes/dark.css';
 }

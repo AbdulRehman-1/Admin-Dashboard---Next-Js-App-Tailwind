@@ -3,4 +3,5 @@ html[data-theme='dark'] {
   --color-secondary: #80bd9e;
   --color-buttons: #89da59;
   --color-typography: #ffffff;
+   --color-borderColor: rgb(229 231 235);
 }

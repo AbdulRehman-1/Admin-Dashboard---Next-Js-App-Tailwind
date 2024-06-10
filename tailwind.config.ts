@@ -17,6 +17,7 @@ const config: Config = {
         secondary: 'var(--color-secondary)',
         buttons: 'var(--color-buttons)',
         typography: 'var(--color-typography)',
+        borderColor: 'var(--color-borderColor)',
       },
     },
   },

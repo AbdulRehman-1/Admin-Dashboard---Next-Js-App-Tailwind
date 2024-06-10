@@ -1,7 +1,12 @@
 'use client';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect, FC } from 'react';
 
 import { MoonIcon, SunIcon } from '@heroicons/react/16/solid';
+
+interface ToggleButtonProps {
+  icon: React.ReactNode;
+  onChange: () => void;
+}
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
@@ -26,12 +31,23 @@ const ThemeToggle = () => {
     localStorage.setItem('theme', 'light');
   };
 
+  const ToggleButton: FC<ToggleButtonProps> = ({ icon, onChange }) => {
+    return (
+      <div
+        onClick={onChange}
+        className=' cursor-pointer border border-borderColor rounded py-2 px-3'
+      >
+        {icon}
+      </div>
+    );
+  };
+
   return (
     <div>
       {theme === 'dark' ? (
-        <SunIcon className='size-10' onClick={handleLight} />
+        <ToggleButton icon={<SunIcon className='size-6' />} onChange={handleLight} />
       ) : (
-        <MoonIcon className='size-10' onClick={handleTheme} />
+        <ToggleButton icon={<MoonIcon className='size-6' />} onChange={handleTheme} />
       )}
     </div>
   );
