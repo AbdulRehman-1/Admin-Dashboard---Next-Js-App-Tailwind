@@ -18,6 +18,7 @@ const config: Config = {
         buttons: 'var(--color-buttons)',
         typography: 'var(--color-typography)',
         borderColor: 'var(--color-borderColor)',
+        sideBar: 'var(--color-sideBar)',
       },
     },
   },

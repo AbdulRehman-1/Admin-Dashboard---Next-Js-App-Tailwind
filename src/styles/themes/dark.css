@@ -1,7 +1,8 @@
 html[data-theme='dark'] {
   --color-primary: #1f2937;
-  --color-secondary: #80bd9e;
+  --color-secondary: #f6f6f6;
   --color-buttons: #89da59;
   --color-typography: #ffffff;
-   --color-borderColor: rgb(229 231 235);
+  --color-borderColor: rgb(229 231 235);
+  --color-sideBar: #f6f6f6;
 }

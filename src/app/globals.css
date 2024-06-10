@@ -5,10 +5,11 @@
 @layer base {
   html {
     --color-primary: #ffffff;
-    --color-secondary: #34a853;
+    --color-secondary: #f6f6f6;
     --color-buttons: #fbbc05;
     --color-typography: #000000;
     --color-borderColor: #000000;
+    --color-sideBar: #f6f6f6;
   }
   @import '../styles/themes/dark.css';
 }
